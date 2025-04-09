@@ -1,0 +1,26 @@
+py --version
+py -m pip --version
+py -m pip install django
+py -m django --version
+django-admin startproject textutils or py -m django startproject textutils
+cd myproject
+py manage.py runserver
+
+py manage.py createsuperuser
+
+
+def index(request):
+    return HttpResponse("<h4>hi - this is praveen<h4>")
+
+need to add template folder and required html file
+def templateex(request):
+    params={'name':'praveen'}
+    return render(request,'home.html',params) // passing param sto html with dictionary
+
+path('admin/', admin.site.urls),
+    path('index/',views.index,name='index'),
+
+    <form class='container' action="/analyzer" method="GET" >
+    <input class="form-check-input" name="count" type="checkbox" role="switch"/>
+
+     based on  the name, we can get values under the url. request.GET.get("count")

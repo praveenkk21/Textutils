@@ -1,0 +1,902 @@
+[
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "ABC",
+        "importPath": "abc",
+        "description": "abc",
+        "isExtraImport": true,
+        "detail": "abc",
+        "documentation": {}
+    },
+    {
+        "label": "abstractmethod",
+        "importPath": "abc",
+        "description": "abc",
+        "isExtraImport": true,
+        "detail": "abc",
+        "documentation": {}
+    },
+    {
+        "label": "get_asgi_application",
+        "importPath": "django.core.asgi",
+        "description": "django.core.asgi",
+        "isExtraImport": true,
+        "detail": "django.core.asgi",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "HttpResponse",
+        "importPath": "django.http",
+        "description": "django.http",
+        "isExtraImport": true,
+        "detail": "django.http",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "get_wsgi_application",
+        "importPath": "django.core.wsgi",
+        "description": "django.core.wsgi",
+        "isExtraImport": true,
+        "detail": "django.core.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "my_dict",
+        "kind": 5,
+        "importPath": "dictionary.dict",
+        "description": "dictionary.dict",
+        "peekOfCode": "my_dict = {\n    \"name\": \"praveen\",\n    \"course\": \"python\",\n    \"marks\": 100,\n    \"outcome\": [\"ai\", \"ml\", \"webdev\"]\n}\nprint(\"Initial dictionary:\", my_dict)\n# Add new key\nmy_dict[\"sirname\"] = 'b'\nprint(\"After adding 'sirname':\", my_dict)",
+        "detail": "dictionary.dict",
+        "documentation": {}
+    },
+    {
+        "label": "my_dict[\"sirname\"]",
+        "kind": 5,
+        "importPath": "dictionary.dict",
+        "description": "dictionary.dict",
+        "peekOfCode": "my_dict[\"sirname\"] = 'b'\nprint(\"After adding 'sirname':\", my_dict)\n# Update value\nmy_dict[\"marks\"] = 90\nprint(\"After updating 'marks':\", my_dict)\n# Delete a key\ndel my_dict[\"sirname\"]\nprint(\"After deleting 'sirname':\", my_dict)\n# Access with get()\na = my_dict.get('course')",
+        "detail": "dictionary.dict",
+        "documentation": {}
+    },
+    {
+        "label": "my_dict[\"marks\"]",
+        "kind": 5,
+        "importPath": "dictionary.dict",
+        "description": "dictionary.dict",
+        "peekOfCode": "my_dict[\"marks\"] = 90\nprint(\"After updating 'marks':\", my_dict)\n# Delete a key\ndel my_dict[\"sirname\"]\nprint(\"After deleting 'sirname':\", my_dict)\n# Access with get()\na = my_dict.get('course')\nprint(\"Get 'course':\", a)\n# Get all keys\nb = my_dict.keys()",
+        "detail": "dictionary.dict",
+        "documentation": {}
+    },
+    {
+        "label": "a",
+        "kind": 5,
+        "importPath": "dictionary.dict",
+        "description": "dictionary.dict",
+        "peekOfCode": "a = my_dict.get('course')\nprint(\"Get 'course':\", a)\n# Get all keys\nb = my_dict.keys()\nprint(\"Keys:\", list(b))\n# Get all values\nc = my_dict.values()\nprint(\"Values:\", list(c))\n# Get all items\nd = my_dict.items()",
+        "detail": "dictionary.dict",
+        "documentation": {}
+    },
+    {
+        "label": "b",
+        "kind": 5,
+        "importPath": "dictionary.dict",
+        "description": "dictionary.dict",
+        "peekOfCode": "b = my_dict.keys()\nprint(\"Keys:\", list(b))\n# Get all values\nc = my_dict.values()\nprint(\"Values:\", list(c))\n# Get all items\nd = my_dict.items()\nprint(\"Items:\", list(d))\n# Pop a specific key\ne = my_dict.pop('marks')",
+        "detail": "dictionary.dict",
+        "documentation": {}
+    },
+    {
+        "label": "c",
+        "kind": 5,
+        "importPath": "dictionary.dict",
+        "description": "dictionary.dict",
+        "peekOfCode": "c = my_dict.values()\nprint(\"Values:\", list(c))\n# Get all items\nd = my_dict.items()\nprint(\"Items:\", list(d))\n# Pop a specific key\ne = my_dict.pop('marks')\nprint(\"Popped 'marks':\", e)\nprint(\"After popping 'marks':\", my_dict)\n# Pop last inserted item",
+        "detail": "dictionary.dict",
+        "documentation": {}
+    },
+    {
+        "label": "d",
+        "kind": 5,
+        "importPath": "dictionary.dict",
+        "description": "dictionary.dict",
+        "peekOfCode": "d = my_dict.items()\nprint(\"Items:\", list(d))\n# Pop a specific key\ne = my_dict.pop('marks')\nprint(\"Popped 'marks':\", e)\nprint(\"After popping 'marks':\", my_dict)\n# Pop last inserted item\nf = my_dict.popitem()\nprint(\"Last popped item:\", f)\nprint(\"After popitem():\", my_dict)",
+        "detail": "dictionary.dict",
+        "documentation": {}
+    },
+    {
+        "label": "e",
+        "kind": 5,
+        "importPath": "dictionary.dict",
+        "description": "dictionary.dict",
+        "peekOfCode": "e = my_dict.pop('marks')\nprint(\"Popped 'marks':\", e)\nprint(\"After popping 'marks':\", my_dict)\n# Pop last inserted item\nf = my_dict.popitem()\nprint(\"Last popped item:\", f)\nprint(\"After popitem():\", my_dict)\n# Iterating over dictionary\nprint(\"Iterating keys (method 1):\")\nfor i in my_dict:",
+        "detail": "dictionary.dict",
+        "documentation": {}
+    },
+    {
+        "label": "f",
+        "kind": 5,
+        "importPath": "dictionary.dict",
+        "description": "dictionary.dict",
+        "peekOfCode": "f = my_dict.popitem()\nprint(\"Last popped item:\", f)\nprint(\"After popitem():\", my_dict)\n# Iterating over dictionary\nprint(\"Iterating keys (method 1):\")\nfor i in my_dict:\n    print(i)\nprint(\"Iterating keys (method 2):\")\nfor i in my_dict.keys():\n    print(i)",
+        "detail": "dictionary.dict",
+        "documentation": {}
+    },
+    {
+        "label": "check_password_strength",
+        "kind": 2,
+        "importPath": "execption.custom",
+        "description": "execption.custom",
+        "peekOfCode": "def check_password_strength(password):\n    if len(password) < 8:\n        raise Exception(\"Password must be at least 8 characters long.\")\n    return \"Password is strong!\"\n# Main logic\ntry:\n    password = input(\"Enter your password: \")\n    result = check_password_strength(password)\n    print(result)\nexcept Exception as e:",
+        "detail": "execption.custom",
+        "documentation": {}
+    },
+    {
+        "label": "file_path",
+        "kind": 5,
+        "importPath": "file_handling.file",
+        "description": "file_handling.file",
+        "peekOfCode": "file_path = \"C:/Users/pkumarb/Downloads/personal/py/file_handling/test.txt\"\n# Check if file exists\nif os.path.exists(file_path):\n    print(f\"The file '{file_path}' exists.\")\nelse:\n    print(f\"The file '{file_path}' does not exist.\")",
+        "detail": "file_handling.file",
+        "documentation": {}
+    },
+    {
+        "label": "my_decorator",
+        "kind": 2,
+        "importPath": "functions.decorator",
+        "description": "functions.decorator",
+        "peekOfCode": "def my_decorator(func):\n    def wrapper():\n        print(\"Before the function runs\")\n        func()\n        print(\"After the function runs\")\n    return wrapper\n# Use the decorator\n@my_decorator\ndef say_hello():\n    print(\"Hello!\")",
+        "detail": "functions.decorator",
+        "documentation": {}
+    },
+    {
+        "label": "say_hello",
+        "kind": 2,
+        "importPath": "functions.decorator",
+        "description": "functions.decorator",
+        "peekOfCode": "def say_hello():\n    print(\"Hello!\")\nsay_hello()",
+        "detail": "functions.decorator",
+        "documentation": {}
+    },
+    {
+        "label": "sum",
+        "kind": 2,
+        "importPath": "functions.func",
+        "description": "functions.func",
+        "peekOfCode": "def sum(a,b):\n    return (a+b)\nprint(sum(5,10))\ndef sum(a,b):\n    return (a+b)\nprint(sum(b=5,a=10))\ndef sum(a=5,b=4):\n    return (a+b)\nprint(sum())",
+        "detail": "functions.func",
+        "documentation": {}
+    },
+    {
+        "label": "sum",
+        "kind": 2,
+        "importPath": "functions.func",
+        "description": "functions.func",
+        "peekOfCode": "def sum(a,b):\n    return (a+b)\nprint(sum(b=5,a=10))\ndef sum(a=5,b=4):\n    return (a+b)\nprint(sum())",
+        "detail": "functions.func",
+        "documentation": {}
+    },
+    {
+        "label": "sum",
+        "kind": 2,
+        "importPath": "functions.func",
+        "description": "functions.func",
+        "peekOfCode": "def sum(a=5,b=4):\n    return (a+b)\nprint(sum())",
+        "detail": "functions.func",
+        "documentation": {}
+    },
+    {
+        "label": "count_up_to",
+        "kind": 2,
+        "importPath": "functions.generator",
+        "description": "functions.generator",
+        "peekOfCode": "def count_up_to(n):\n    i = 1\n    while i <= n:\n        yield i      # Pause and return i\n        i += 1       # Resume from here next time\n# Using the generator\nfor num in count_up_to(5):\n    print(num)",
+        "detail": "functions.generator",
+        "documentation": {}
+    },
+    {
+        "label": "my_lst",
+        "kind": 5,
+        "importPath": "list&tuples.list",
+        "description": "list&tuples.list",
+        "peekOfCode": "my_lst = [1, 2, 3, True]\nprint(\"Original my_lst:\", my_lst)\nlst = my_lst.copy()           # Copy of the list\nprint(\"Copied list lst:\", lst)\nlst_2 = my_lst                # Reference to the same original list\nprint(\"Reference list lst_2 (same as my_lst):\", lst_2)\n# List operations\nlst[0] = 'praveen'            # Replace first element with 'praveen'\nprint(\"After replacing first element with 'praveen':\", lst)\nlst[0:3] = [23, 34, 56]       # Replace slice with new elements",
+        "detail": "list&tuples.list",
+        "documentation": {}
+    },
+    {
+        "label": "lst",
+        "kind": 5,
+        "importPath": "list&tuples.list",
+        "description": "list&tuples.list",
+        "peekOfCode": "lst = my_lst.copy()           # Copy of the list\nprint(\"Copied list lst:\", lst)\nlst_2 = my_lst                # Reference to the same original list\nprint(\"Reference list lst_2 (same as my_lst):\", lst_2)\n# List operations\nlst[0] = 'praveen'            # Replace first element with 'praveen'\nprint(\"After replacing first element with 'praveen':\", lst)\nlst[0:3] = [23, 34, 56]       # Replace slice with new elements\nprint(\"After replacing first three elements:\", lst)\nlst * 2                       # Repeat the list (no effect unless reassigned)",
+        "detail": "list&tuples.list",
+        "documentation": {}
+    },
+    {
+        "label": "lst_2",
+        "kind": 5,
+        "importPath": "list&tuples.list",
+        "description": "list&tuples.list",
+        "peekOfCode": "lst_2 = my_lst                # Reference to the same original list\nprint(\"Reference list lst_2 (same as my_lst):\", lst_2)\n# List operations\nlst[0] = 'praveen'            # Replace first element with 'praveen'\nprint(\"After replacing first element with 'praveen':\", lst)\nlst[0:3] = [23, 34, 56]       # Replace slice with new elements\nprint(\"After replacing first three elements:\", lst)\nlst * 2                       # Repeat the list (no effect unless reassigned)\nprint(\"After lst * 2 (no change in original):\", lst * 2 )\nlst.append(2)                 # Append 2",
+        "detail": "list&tuples.list",
+        "documentation": {}
+    },
+    {
+        "label": "lst[0]",
+        "kind": 5,
+        "importPath": "list&tuples.list",
+        "description": "list&tuples.list",
+        "peekOfCode": "lst[0] = 'praveen'            # Replace first element with 'praveen'\nprint(\"After replacing first element with 'praveen':\", lst)\nlst[0:3] = [23, 34, 56]       # Replace slice with new elements\nprint(\"After replacing first three elements:\", lst)\nlst * 2                       # Repeat the list (no effect unless reassigned)\nprint(\"After lst * 2 (no change in original):\", lst * 2 )\nlst.append(2)                 # Append 2\nprint(\"After append(2):\", lst)\nlst.extend(lst_2)            # Extend with lst_2 (which is my_lst, now cleared later)\nprint(\"After extend with lst_2 (my_lst):\", lst)",
+        "detail": "list&tuples.list",
+        "documentation": {}
+    },
+    {
+        "label": "lst[0:3]",
+        "kind": 5,
+        "importPath": "list&tuples.list",
+        "description": "list&tuples.list",
+        "peekOfCode": "lst[0:3] = [23, 34, 56]       # Replace slice with new elements\nprint(\"After replacing first three elements:\", lst)\nlst * 2                       # Repeat the list (no effect unless reassigned)\nprint(\"After lst * 2 (no change in original):\", lst * 2 )\nlst.append(2)                 # Append 2\nprint(\"After append(2):\", lst)\nlst.extend(lst_2)            # Extend with lst_2 (which is my_lst, now cleared later)\nprint(\"After extend with lst_2 (my_lst):\", lst)\nlst.insert(1, 'kumar')       # Insert 'kumar' at index 1\nprint(\"After insert 'kumar' at index 1:\", lst)",
+        "detail": "list&tuples.list",
+        "documentation": {}
+    },
+    {
+        "label": "d",
+        "kind": 5,
+        "importPath": "list&tuples.list",
+        "description": "list&tuples.list",
+        "peekOfCode": "d = lst.pop(2)               # Pop item at index 2\nprint(\"Popped element at index 2:\", d)\nprint(\"After pop(2):\", lst)\nlst_2.clear()                # Clear my_lst and lst_2\nprint(\"After clear() on lst_2 (and my_lst):\", lst_2)\nprint(\"lst after lst_2.clear():\", lst)\n# Index and count\ntry:\n    e = lst.index('praveen')     # Find index of 'praveen'\nexcept:",
+        "detail": "list&tuples.list",
+        "documentation": {}
+    },
+    {
+        "label": "f",
+        "kind": 5,
+        "importPath": "list&tuples.list",
+        "description": "list&tuples.list",
+        "peekOfCode": "f = lst.count(2)             # Count of 2s\nprint(\"Count of 2s:\", f)\n# Sorting\ng = lst.copy()\nprint(\"Copy before sorting:\", g)\ntry:\n    g.sort()\n    h = g\nexcept:\n    h = \"Sorting failed due to incompatible types\"",
+        "detail": "list&tuples.list",
+        "documentation": {}
+    },
+    {
+        "label": "g",
+        "kind": 5,
+        "importPath": "list&tuples.list",
+        "description": "list&tuples.list",
+        "peekOfCode": "g = lst.copy()\nprint(\"Copy before sorting:\", g)\ntry:\n    g.sort()\n    h = g\nexcept:\n    h = \"Sorting failed due to incompatible types\"\nprint(\"Sorted list or error:\", h)\n# Min and max\ntry:",
+        "detail": "list&tuples.list",
+        "documentation": {}
+    },
+    {
+        "label": "k",
+        "kind": 5,
+        "importPath": "list&tuples.list",
+        "description": "list&tuples.list",
+        "peekOfCode": "k = lst\nprint(\"Reversed list:\", k)\n# Set operations\ns1 = set([1, 2, 3])\nprint(\"Set s1:\", s1)\ns2 = set([3, 4, 5])\nprint(\"Set s2:\", s2)\nl = s1.intersection(s2)\nprint(\"Intersection of s1 and s2:\", l)\n# Nested list",
+        "detail": "list&tuples.list",
+        "documentation": {}
+    },
+    {
+        "label": "s1",
+        "kind": 5,
+        "importPath": "list&tuples.list",
+        "description": "list&tuples.list",
+        "peekOfCode": "s1 = set([1, 2, 3])\nprint(\"Set s1:\", s1)\ns2 = set([3, 4, 5])\nprint(\"Set s2:\", s2)\nl = s1.intersection(s2)\nprint(\"Intersection of s1 and s2:\", l)\n# Nested list\nm = [s1, lst, ['a', 'd']]\nprint(\"Nested list:\", m)\n# List comprehension",
+        "detail": "list&tuples.list",
+        "documentation": {}
+    },
+    {
+        "label": "s2",
+        "kind": 5,
+        "importPath": "list&tuples.list",
+        "description": "list&tuples.list",
+        "peekOfCode": "s2 = set([3, 4, 5])\nprint(\"Set s2:\", s2)\nl = s1.intersection(s2)\nprint(\"Intersection of s1 and s2:\", l)\n# Nested list\nm = [s1, lst, ['a', 'd']]\nprint(\"Nested list:\", m)\n# List comprehension\nn = [i**2 for i in range(1, 6)]\nprint(\"Squares from 1 to 5:\", n)",
+        "detail": "list&tuples.list",
+        "documentation": {}
+    },
+    {
+        "label": "l",
+        "kind": 5,
+        "importPath": "list&tuples.list",
+        "description": "list&tuples.list",
+        "peekOfCode": "l = s1.intersection(s2)\nprint(\"Intersection of s1 and s2:\", l)\n# Nested list\nm = [s1, lst, ['a', 'd']]\nprint(\"Nested list:\", m)\n# List comprehension\nn = [i**2 for i in range(1, 6)]\nprint(\"Squares from 1 to 5:\", n)\n'''\nTuples:",
+        "detail": "list&tuples.list",
+        "documentation": {}
+    },
+    {
+        "label": "m",
+        "kind": 5,
+        "importPath": "list&tuples.list",
+        "description": "list&tuples.list",
+        "peekOfCode": "m = [s1, lst, ['a', 'd']]\nprint(\"Nested list:\", m)\n# List comprehension\nn = [i**2 for i in range(1, 6)]\nprint(\"Squares from 1 to 5:\", n)\n'''\nTuples:\n1. Immutable\n2. Heterogeneous\n3. Defined with ( )",
+        "detail": "list&tuples.list",
+        "documentation": {}
+    },
+    {
+        "label": "n",
+        "kind": 5,
+        "importPath": "list&tuples.list",
+        "description": "list&tuples.list",
+        "peekOfCode": "n = [i**2 for i in range(1, 6)]\nprint(\"Squares from 1 to 5:\", n)\n'''\nTuples:\n1. Immutable\n2. Heterogeneous\n3. Defined with ( )\nOnly limited operations like len, min, max, and count apply\n'''",
+        "detail": "list&tuples.list",
+        "documentation": {}
+    },
+    {
+        "label": "Animal",
+        "kind": 6,
+        "importPath": "oops.all_oops",
+        "description": "oops.all_oops",
+        "peekOfCode": "class Animal(ABC):\n    @abstractmethod\n    def make_sound(self):\n        pass  # Abstract method, must be implemented in child classes\n# Concrete Class\nclass Dog(Animal):\n    def make_sound(self):\n        print(\"Woof!\")\nclass Cat(Animal):\n    def make_sound(self):",
+        "detail": "oops.all_oops",
+        "documentation": {}
+    },
+    {
+        "label": "Dog",
+        "kind": 6,
+        "importPath": "oops.all_oops",
+        "description": "oops.all_oops",
+        "peekOfCode": "class Dog(Animal):\n    def make_sound(self):\n        print(\"Woof!\")\nclass Cat(Animal):\n    def make_sound(self):\n        print(\"Meow!\")\n# Usage\nd = Dog()\nd.make_sound()  # Output: Woof!\nc = Cat()",
+        "detail": "oops.all_oops",
+        "documentation": {}
+    },
+    {
+        "label": "Cat",
+        "kind": 6,
+        "importPath": "oops.all_oops",
+        "description": "oops.all_oops",
+        "peekOfCode": "class Cat(Animal):\n    def make_sound(self):\n        print(\"Meow!\")\n# Usage\nd = Dog()\nd.make_sound()  # Output: Woof!\nc = Cat()\nc.make_sound()  # Output: Meow!\n# 2. Inheritance – One class (child) inherits from another (parent)\n# Parent class",
+        "detail": "oops.all_oops",
+        "documentation": {}
+    },
+    {
+        "label": "Vehicle",
+        "kind": 6,
+        "importPath": "oops.all_oops",
+        "description": "oops.all_oops",
+        "peekOfCode": "class Vehicle:\n    def start(self):\n        print(\"Engine started\")\n# Child class inheriting Vehicle\nclass Car(Vehicle):\n    def drive(self):\n        print(\"Car is driving\")\n# Usage\nc = Car()\nc.start()    # Inherited method from Vehicle",
+        "detail": "oops.all_oops",
+        "documentation": {}
+    },
+    {
+        "label": "Car",
+        "kind": 6,
+        "importPath": "oops.all_oops",
+        "description": "oops.all_oops",
+        "peekOfCode": "class Car(Vehicle):\n    def drive(self):\n        print(\"Car is driving\")\n# Usage\nc = Car()\nc.start()    # Inherited method from Vehicle\nc.drive()    # Child class method\n# 3. Polymorphism – Same method name behaves differently for different classes\nclass Bird:\n    def fly(self):",
+        "detail": "oops.all_oops",
+        "documentation": {}
+    },
+    {
+        "label": "Bird",
+        "kind": 6,
+        "importPath": "oops.all_oops",
+        "description": "oops.all_oops",
+        "peekOfCode": "class Bird:\n    def fly(self):\n        print(\"Bird is flying\")\nclass Airplane:\n    def fly(self):\n        print(\"Airplane is flying\")\n# Common interface\ndef lift_off(entity):\n    entity.fly()  # Polymorphic call\n# Usage",
+        "detail": "oops.all_oops",
+        "documentation": {}
+    },
+    {
+        "label": "Airplane",
+        "kind": 6,
+        "importPath": "oops.all_oops",
+        "description": "oops.all_oops",
+        "peekOfCode": "class Airplane:\n    def fly(self):\n        print(\"Airplane is flying\")\n# Common interface\ndef lift_off(entity):\n    entity.fly()  # Polymorphic call\n# Usage\nb = Bird()\na = Airplane()\nlift_off(b)  # Output: Bird is flying",
+        "detail": "oops.all_oops",
+        "documentation": {}
+    },
+    {
+        "label": "BankAccount",
+        "kind": 6,
+        "importPath": "oops.all_oops",
+        "description": "oops.all_oops",
+        "peekOfCode": "class BankAccount:\n    def __init__(self, balance):\n        self.__balance = balance  # Private variable using __\n    def deposit(self, amount):\n        self.__balance += amount\n    def get_balance(self):\n        return self.__balance  # Accessing private variable safely\n# Usage\naccount = BankAccount(1000)\naccount.deposit(500)",
+        "detail": "oops.all_oops",
+        "documentation": {}
+    },
+    {
+        "label": "lift_off",
+        "kind": 2,
+        "importPath": "oops.all_oops",
+        "description": "oops.all_oops",
+        "peekOfCode": "def lift_off(entity):\n    entity.fly()  # Polymorphic call\n# Usage\nb = Bird()\na = Airplane()\nlift_off(b)  # Output: Bird is flying\nlift_off(a)  # Output: Airplane is flying\n# 4. Encapsulation – Hiding data using private variables\nclass BankAccount:\n    def __init__(self, balance):",
+        "detail": "oops.all_oops",
+        "documentation": {}
+    },
+    {
+        "label": "d",
+        "kind": 5,
+        "importPath": "oops.all_oops",
+        "description": "oops.all_oops",
+        "peekOfCode": "d = Dog()\nd.make_sound()  # Output: Woof!\nc = Cat()\nc.make_sound()  # Output: Meow!\n# 2. Inheritance – One class (child) inherits from another (parent)\n# Parent class\nclass Vehicle:\n    def start(self):\n        print(\"Engine started\")\n# Child class inheriting Vehicle",
+        "detail": "oops.all_oops",
+        "documentation": {}
+    },
+    {
+        "label": "c",
+        "kind": 5,
+        "importPath": "oops.all_oops",
+        "description": "oops.all_oops",
+        "peekOfCode": "c = Cat()\nc.make_sound()  # Output: Meow!\n# 2. Inheritance – One class (child) inherits from another (parent)\n# Parent class\nclass Vehicle:\n    def start(self):\n        print(\"Engine started\")\n# Child class inheriting Vehicle\nclass Car(Vehicle):\n    def drive(self):",
+        "detail": "oops.all_oops",
+        "documentation": {}
+    },
+    {
+        "label": "c",
+        "kind": 5,
+        "importPath": "oops.all_oops",
+        "description": "oops.all_oops",
+        "peekOfCode": "c = Car()\nc.start()    # Inherited method from Vehicle\nc.drive()    # Child class method\n# 3. Polymorphism – Same method name behaves differently for different classes\nclass Bird:\n    def fly(self):\n        print(\"Bird is flying\")\nclass Airplane:\n    def fly(self):\n        print(\"Airplane is flying\")",
+        "detail": "oops.all_oops",
+        "documentation": {}
+    },
+    {
+        "label": "b",
+        "kind": 5,
+        "importPath": "oops.all_oops",
+        "description": "oops.all_oops",
+        "peekOfCode": "b = Bird()\na = Airplane()\nlift_off(b)  # Output: Bird is flying\nlift_off(a)  # Output: Airplane is flying\n# 4. Encapsulation – Hiding data using private variables\nclass BankAccount:\n    def __init__(self, balance):\n        self.__balance = balance  # Private variable using __\n    def deposit(self, amount):\n        self.__balance += amount",
+        "detail": "oops.all_oops",
+        "documentation": {}
+    },
+    {
+        "label": "a",
+        "kind": 5,
+        "importPath": "oops.all_oops",
+        "description": "oops.all_oops",
+        "peekOfCode": "a = Airplane()\nlift_off(b)  # Output: Bird is flying\nlift_off(a)  # Output: Airplane is flying\n# 4. Encapsulation – Hiding data using private variables\nclass BankAccount:\n    def __init__(self, balance):\n        self.__balance = balance  # Private variable using __\n    def deposit(self, amount):\n        self.__balance += amount\n    def get_balance(self):",
+        "detail": "oops.all_oops",
+        "documentation": {}
+    },
+    {
+        "label": "account",
+        "kind": 5,
+        "importPath": "oops.all_oops",
+        "description": "oops.all_oops",
+        "peekOfCode": "account = BankAccount(1000)\naccount.deposit(500)\nprint(account.get_balance())  # Output: 1500\n# print(account.__balance)   # ❌ This will raise an error (private)",
+        "detail": "oops.all_oops",
+        "documentation": {}
+    },
+    {
+        "label": "Student",
+        "kind": 6,
+        "importPath": "oops.oop",
+        "description": "oops.oop",
+        "peekOfCode": "class Student:\n    # Constructor: This method is called when an object is created\n    def __init__(self, name, grade):\n        self.name = name      # 'self.name' is an instance variable storing the student's name\n        self.grade = grade    # 'self.grade' stores the student's grade\n    # Method to display student info\n    def display_info(self):\n        # This method prints the name and grade of the student\n        print(f\"Name: {self.name}, Grade: {self.grade}\")\n# Create first object of Student class",
+        "detail": "oops.oop",
+        "documentation": {}
+    },
+    {
+        "label": "s1",
+        "kind": 5,
+        "importPath": "oops.oop",
+        "description": "oops.oop",
+        "peekOfCode": "s1 = Student(\"Praveen\", \"A\")  # 's1' is an object with name \"Praveen\" and grade \"A\"\n# Create second object of Student class\ns2 = Student(\"Kumar\", \"B\")    # 's2' is an object with name \"Kumar\" and grade \"B\"\n# Call the method using both objects\ns1.display_info()  # Output: Name: Praveen, Grade: A\ns2.display_info()  # Output: Name: Kumar, Grade: B",
+        "detail": "oops.oop",
+        "documentation": {}
+    },
+    {
+        "label": "s2",
+        "kind": 5,
+        "importPath": "oops.oop",
+        "description": "oops.oop",
+        "peekOfCode": "s2 = Student(\"Kumar\", \"B\")    # 's2' is an object with name \"Kumar\" and grade \"B\"\n# Call the method using both objects\ns1.display_info()  # Output: Name: Praveen, Grade: A\ns2.display_info()  # Output: Name: Kumar, Grade: B",
+        "detail": "oops.oop",
+        "documentation": {}
+    },
+    {
+        "label": "name",
+        "kind": 5,
+        "importPath": "strings.string",
+        "description": "strings.string",
+        "peekOfCode": "name = 'praveen kumar'  # String to perform various operations on\nmethodlist = []         # List to store results of operations\n# Perform various string operations and assign results to variables a to p\na = len(name)                         # a: Length of the string → 13\nb = name[2]                           # b: Character at index 2 → 'a'\nc = name.capitalize()                 # c: Capitalizes first letter → 'Praveen kumar'\nd = name.title()                      # d: Capitalizes first letter of each word → 'Praveen Kumar'\ne = name[0:5:2]                       # e: Slice from index 0 to 5 with step 2 → 'pae'\nf = name[::-1]                        # f: Reversed string → 'ramuk neevarp'\ng = name.swapcase()                   # g: Swap case → 'PRAVEEN KUMAR'",
+        "detail": "strings.string",
+        "documentation": {}
+    },
+    {
+        "label": "methodlist",
+        "kind": 5,
+        "importPath": "strings.string",
+        "description": "strings.string",
+        "peekOfCode": "methodlist = []         # List to store results of operations\n# Perform various string operations and assign results to variables a to p\na = len(name)                         # a: Length of the string → 13\nb = name[2]                           # b: Character at index 2 → 'a'\nc = name.capitalize()                 # c: Capitalizes first letter → 'Praveen kumar'\nd = name.title()                      # d: Capitalizes first letter of each word → 'Praveen Kumar'\ne = name[0:5:2]                       # e: Slice from index 0 to 5 with step 2 → 'pae'\nf = name[::-1]                        # f: Reversed string → 'ramuk neevarp'\ng = name.swapcase()                   # g: Swap case → 'PRAVEEN KUMAR'\nh = name.lower()                      # h: Convert all letters to lowercase → 'praveen kumar'",
+        "detail": "strings.string",
+        "documentation": {}
+    },
+    {
+        "label": "a",
+        "kind": 5,
+        "importPath": "strings.string",
+        "description": "strings.string",
+        "peekOfCode": "a = len(name)                         # a: Length of the string → 13\nb = name[2]                           # b: Character at index 2 → 'a'\nc = name.capitalize()                 # c: Capitalizes first letter → 'Praveen kumar'\nd = name.title()                      # d: Capitalizes first letter of each word → 'Praveen Kumar'\ne = name[0:5:2]                       # e: Slice from index 0 to 5 with step 2 → 'pae'\nf = name[::-1]                        # f: Reversed string → 'ramuk neevarp'\ng = name.swapcase()                   # g: Swap case → 'PRAVEEN KUMAR'\nh = name.lower()                      # h: Convert all letters to lowercase → 'praveen kumar'\ni = name.upper()                      # i: Convert all letters to uppercase → 'PRAVEEN KUMAR'\nj = name.replace(\"a\", \"g\")            # j: Replace 'a' with 'g' → 'prgveen kumgr'",
+        "detail": "strings.string",
+        "documentation": {}
+    },
+    {
+        "label": "b",
+        "kind": 5,
+        "importPath": "strings.string",
+        "description": "strings.string",
+        "peekOfCode": "b = name[2]                           # b: Character at index 2 → 'a'\nc = name.capitalize()                 # c: Capitalizes first letter → 'Praveen kumar'\nd = name.title()                      # d: Capitalizes first letter of each word → 'Praveen Kumar'\ne = name[0:5:2]                       # e: Slice from index 0 to 5 with step 2 → 'pae'\nf = name[::-1]                        # f: Reversed string → 'ramuk neevarp'\ng = name.swapcase()                   # g: Swap case → 'PRAVEEN KUMAR'\nh = name.lower()                      # h: Convert all letters to lowercase → 'praveen kumar'\ni = name.upper()                      # i: Convert all letters to uppercase → 'PRAVEEN KUMAR'\nj = name.replace(\"a\", \"g\")            # j: Replace 'a' with 'g' → 'prgveen kumgr'\nk = name.isalnum()                    # k: Checks if all characters are alphanumeric → False (space is not alphanumeric)",
+        "detail": "strings.string",
+        "documentation": {}
+    },
+    {
+        "label": "c",
+        "kind": 5,
+        "importPath": "strings.string",
+        "description": "strings.string",
+        "peekOfCode": "c = name.capitalize()                 # c: Capitalizes first letter → 'Praveen kumar'\nd = name.title()                      # d: Capitalizes first letter of each word → 'Praveen Kumar'\ne = name[0:5:2]                       # e: Slice from index 0 to 5 with step 2 → 'pae'\nf = name[::-1]                        # f: Reversed string → 'ramuk neevarp'\ng = name.swapcase()                   # g: Swap case → 'PRAVEEN KUMAR'\nh = name.lower()                      # h: Convert all letters to lowercase → 'praveen kumar'\ni = name.upper()                      # i: Convert all letters to uppercase → 'PRAVEEN KUMAR'\nj = name.replace(\"a\", \"g\")            # j: Replace 'a' with 'g' → 'prgveen kumgr'\nk = name.isalnum()                    # k: Checks if all characters are alphanumeric → False (space is not alphanumeric)\nl = name.isnumeric()                  # l: Checks if string is numeric → False",
+        "detail": "strings.string",
+        "documentation": {}
+    },
+    {
+        "label": "d",
+        "kind": 5,
+        "importPath": "strings.string",
+        "description": "strings.string",
+        "peekOfCode": "d = name.title()                      # d: Capitalizes first letter of each word → 'Praveen Kumar'\ne = name[0:5:2]                       # e: Slice from index 0 to 5 with step 2 → 'pae'\nf = name[::-1]                        # f: Reversed string → 'ramuk neevarp'\ng = name.swapcase()                   # g: Swap case → 'PRAVEEN KUMAR'\nh = name.lower()                      # h: Convert all letters to lowercase → 'praveen kumar'\ni = name.upper()                      # i: Convert all letters to uppercase → 'PRAVEEN KUMAR'\nj = name.replace(\"a\", \"g\")            # j: Replace 'a' with 'g' → 'prgveen kumgr'\nk = name.isalnum()                    # k: Checks if all characters are alphanumeric → False (space is not alphanumeric)\nl = name.isnumeric()                  # l: Checks if string is numeric → False\nm = name.endswith('r')                # m: Checks if string ends with 'r' → True",
+        "detail": "strings.string",
+        "documentation": {}
+    },
+    {
+        "label": "e",
+        "kind": 5,
+        "importPath": "strings.string",
+        "description": "strings.string",
+        "peekOfCode": "e = name[0:5:2]                       # e: Slice from index 0 to 5 with step 2 → 'pae'\nf = name[::-1]                        # f: Reversed string → 'ramuk neevarp'\ng = name.swapcase()                   # g: Swap case → 'PRAVEEN KUMAR'\nh = name.lower()                      # h: Convert all letters to lowercase → 'praveen kumar'\ni = name.upper()                      # i: Convert all letters to uppercase → 'PRAVEEN KUMAR'\nj = name.replace(\"a\", \"g\")            # j: Replace 'a' with 'g' → 'prgveen kumgr'\nk = name.isalnum()                    # k: Checks if all characters are alphanumeric → False (space is not alphanumeric)\nl = name.isnumeric()                  # l: Checks if string is numeric → False\nm = name.endswith('r')                # m: Checks if string ends with 'r' → True\nn = name.startswith('a')              # n: Checks if string starts with 'a' → False",
+        "detail": "strings.string",
+        "documentation": {}
+    },
+    {
+        "label": "f",
+        "kind": 5,
+        "importPath": "strings.string",
+        "description": "strings.string",
+        "peekOfCode": "f = name[::-1]                        # f: Reversed string → 'ramuk neevarp'\ng = name.swapcase()                   # g: Swap case → 'PRAVEEN KUMAR'\nh = name.lower()                      # h: Convert all letters to lowercase → 'praveen kumar'\ni = name.upper()                      # i: Convert all letters to uppercase → 'PRAVEEN KUMAR'\nj = name.replace(\"a\", \"g\")            # j: Replace 'a' with 'g' → 'prgveen kumgr'\nk = name.isalnum()                    # k: Checks if all characters are alphanumeric → False (space is not alphanumeric)\nl = name.isnumeric()                  # l: Checks if string is numeric → False\nm = name.endswith('r')                # m: Checks if string ends with 'r' → True\nn = name.startswith('a')              # n: Checks if string starts with 'a' → False\no = name.split(\" \")                   # o: Splits string by space into a list → ['praveen', 'kumar']",
+        "detail": "strings.string",
+        "documentation": {}
+    },
+    {
+        "label": "g",
+        "kind": 5,
+        "importPath": "strings.string",
+        "description": "strings.string",
+        "peekOfCode": "g = name.swapcase()                   # g: Swap case → 'PRAVEEN KUMAR'\nh = name.lower()                      # h: Convert all letters to lowercase → 'praveen kumar'\ni = name.upper()                      # i: Convert all letters to uppercase → 'PRAVEEN KUMAR'\nj = name.replace(\"a\", \"g\")            # j: Replace 'a' with 'g' → 'prgveen kumgr'\nk = name.isalnum()                    # k: Checks if all characters are alphanumeric → False (space is not alphanumeric)\nl = name.isnumeric()                  # l: Checks if string is numeric → False\nm = name.endswith('r')                # m: Checks if string ends with 'r' → True\nn = name.startswith('a')              # n: Checks if string starts with 'a' → False\no = name.split(\" \")                   # o: Splits string by space into a list → ['praveen', 'kumar']\np = \"_\".join(name.split(\" \"))         # p: Joins words with '_' → 'praveen_kumar'",
+        "detail": "strings.string",
+        "documentation": {}
+    },
+    {
+        "label": "h",
+        "kind": 5,
+        "importPath": "strings.string",
+        "description": "strings.string",
+        "peekOfCode": "h = name.lower()                      # h: Convert all letters to lowercase → 'praveen kumar'\ni = name.upper()                      # i: Convert all letters to uppercase → 'PRAVEEN KUMAR'\nj = name.replace(\"a\", \"g\")            # j: Replace 'a' with 'g' → 'prgveen kumgr'\nk = name.isalnum()                    # k: Checks if all characters are alphanumeric → False (space is not alphanumeric)\nl = name.isnumeric()                  # l: Checks if string is numeric → False\nm = name.endswith('r')                # m: Checks if string ends with 'r' → True\nn = name.startswith('a')              # n: Checks if string starts with 'a' → False\no = name.split(\" \")                   # o: Splits string by space into a list → ['praveen', 'kumar']\np = \"_\".join(name.split(\" \"))         # p: Joins words with '_' → 'praveen_kumar'\n# Append all values to methodlist in alphabetical order of variable names",
+        "detail": "strings.string",
+        "documentation": {}
+    },
+    {
+        "label": "i",
+        "kind": 5,
+        "importPath": "strings.string",
+        "description": "strings.string",
+        "peekOfCode": "i = name.upper()                      # i: Convert all letters to uppercase → 'PRAVEEN KUMAR'\nj = name.replace(\"a\", \"g\")            # j: Replace 'a' with 'g' → 'prgveen kumgr'\nk = name.isalnum()                    # k: Checks if all characters are alphanumeric → False (space is not alphanumeric)\nl = name.isnumeric()                  # l: Checks if string is numeric → False\nm = name.endswith('r')                # m: Checks if string ends with 'r' → True\nn = name.startswith('a')              # n: Checks if string starts with 'a' → False\no = name.split(\" \")                   # o: Splits string by space into a list → ['praveen', 'kumar']\np = \"_\".join(name.split(\" \"))         # p: Joins words with '_' → 'praveen_kumar'\n# Append all values to methodlist in alphabetical order of variable names\nmethodlist.extend([a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p])",
+        "detail": "strings.string",
+        "documentation": {}
+    },
+    {
+        "label": "j",
+        "kind": 5,
+        "importPath": "strings.string",
+        "description": "strings.string",
+        "peekOfCode": "j = name.replace(\"a\", \"g\")            # j: Replace 'a' with 'g' → 'prgveen kumgr'\nk = name.isalnum()                    # k: Checks if all characters are alphanumeric → False (space is not alphanumeric)\nl = name.isnumeric()                  # l: Checks if string is numeric → False\nm = name.endswith('r')                # m: Checks if string ends with 'r' → True\nn = name.startswith('a')              # n: Checks if string starts with 'a' → False\no = name.split(\" \")                   # o: Splits string by space into a list → ['praveen', 'kumar']\np = \"_\".join(name.split(\" \"))         # p: Joins words with '_' → 'praveen_kumar'\n# Append all values to methodlist in alphabetical order of variable names\nmethodlist.extend([a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p])\nprint(methodlist)  # Print the final list of results",
+        "detail": "strings.string",
+        "documentation": {}
+    },
+    {
+        "label": "k",
+        "kind": 5,
+        "importPath": "strings.string",
+        "description": "strings.string",
+        "peekOfCode": "k = name.isalnum()                    # k: Checks if all characters are alphanumeric → False (space is not alphanumeric)\nl = name.isnumeric()                  # l: Checks if string is numeric → False\nm = name.endswith('r')                # m: Checks if string ends with 'r' → True\nn = name.startswith('a')              # n: Checks if string starts with 'a' → False\no = name.split(\" \")                   # o: Splits string by space into a list → ['praveen', 'kumar']\np = \"_\".join(name.split(\" \"))         # p: Joins words with '_' → 'praveen_kumar'\n# Append all values to methodlist in alphabetical order of variable names\nmethodlist.extend([a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p])\nprint(methodlist)  # Print the final list of results",
+        "detail": "strings.string",
+        "documentation": {}
+    },
+    {
+        "label": "l",
+        "kind": 5,
+        "importPath": "strings.string",
+        "description": "strings.string",
+        "peekOfCode": "l = name.isnumeric()                  # l: Checks if string is numeric → False\nm = name.endswith('r')                # m: Checks if string ends with 'r' → True\nn = name.startswith('a')              # n: Checks if string starts with 'a' → False\no = name.split(\" \")                   # o: Splits string by space into a list → ['praveen', 'kumar']\np = \"_\".join(name.split(\" \"))         # p: Joins words with '_' → 'praveen_kumar'\n# Append all values to methodlist in alphabetical order of variable names\nmethodlist.extend([a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p])\nprint(methodlist)  # Print the final list of results",
+        "detail": "strings.string",
+        "documentation": {}
+    },
+    {
+        "label": "m",
+        "kind": 5,
+        "importPath": "strings.string",
+        "description": "strings.string",
+        "peekOfCode": "m = name.endswith('r')                # m: Checks if string ends with 'r' → True\nn = name.startswith('a')              # n: Checks if string starts with 'a' → False\no = name.split(\" \")                   # o: Splits string by space into a list → ['praveen', 'kumar']\np = \"_\".join(name.split(\" \"))         # p: Joins words with '_' → 'praveen_kumar'\n# Append all values to methodlist in alphabetical order of variable names\nmethodlist.extend([a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p])\nprint(methodlist)  # Print the final list of results",
+        "detail": "strings.string",
+        "documentation": {}
+    },
+    {
+        "label": "n",
+        "kind": 5,
+        "importPath": "strings.string",
+        "description": "strings.string",
+        "peekOfCode": "n = name.startswith('a')              # n: Checks if string starts with 'a' → False\no = name.split(\" \")                   # o: Splits string by space into a list → ['praveen', 'kumar']\np = \"_\".join(name.split(\" \"))         # p: Joins words with '_' → 'praveen_kumar'\n# Append all values to methodlist in alphabetical order of variable names\nmethodlist.extend([a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p])\nprint(methodlist)  # Print the final list of results",
+        "detail": "strings.string",
+        "documentation": {}
+    },
+    {
+        "label": "o",
+        "kind": 5,
+        "importPath": "strings.string",
+        "description": "strings.string",
+        "peekOfCode": "o = name.split(\" \")                   # o: Splits string by space into a list → ['praveen', 'kumar']\np = \"_\".join(name.split(\" \"))         # p: Joins words with '_' → 'praveen_kumar'\n# Append all values to methodlist in alphabetical order of variable names\nmethodlist.extend([a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p])\nprint(methodlist)  # Print the final list of results",
+        "detail": "strings.string",
+        "documentation": {}
+    },
+    {
+        "label": "p",
+        "kind": 5,
+        "importPath": "strings.string",
+        "description": "strings.string",
+        "peekOfCode": "p = \"_\".join(name.split(\" \"))         # p: Joins words with '_' → 'praveen_kumar'\n# Append all values to methodlist in alphabetical order of variable names\nmethodlist.extend([a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p])\nprint(methodlist)  # Print the final list of results",
+        "detail": "strings.string",
+        "documentation": {}
+    },
+    {
+        "label": "application",
+        "kind": 5,
+        "importPath": "textutils.textutils.asgi",
+        "description": "textutils.textutils.asgi",
+        "peekOfCode": "application = get_asgi_application()",
+        "detail": "textutils.textutils.asgi",
+        "documentation": {}
+    },
+    {
+        "label": "BASE_DIR",
+        "kind": 5,
+        "importPath": "textutils.textutils.settings",
+        "description": "textutils.textutils.settings",
+        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = 'django-insecure-qp$c30olg9=o()m-3kd7==3h@9wprjw6b07uin!e%+kq@9kxw4'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [",
+        "detail": "textutils.textutils.settings",
+        "documentation": {}
+    },
+    {
+        "label": "SECRET_KEY",
+        "kind": 5,
+        "importPath": "textutils.textutils.settings",
+        "description": "textutils.textutils.settings",
+        "peekOfCode": "SECRET_KEY = 'django-insecure-qp$c30olg9=o()m-3kd7==3h@9wprjw6b07uin!e%+kq@9kxw4'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',",
+        "detail": "textutils.textutils.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DEBUG",
+        "kind": 5,
+        "importPath": "textutils.textutils.settings",
+        "description": "textutils.textutils.settings",
+        "peekOfCode": "DEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',",
+        "detail": "textutils.textutils.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ALLOWED_HOSTS",
+        "kind": 5,
+        "importPath": "textutils.textutils.settings",
+        "description": "textutils.textutils.settings",
+        "peekOfCode": "ALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n]",
+        "detail": "textutils.textutils.settings",
+        "documentation": {}
+    },
+    {
+        "label": "INSTALLED_APPS",
+        "kind": 5,
+        "importPath": "textutils.textutils.settings",
+        "description": "textutils.textutils.settings",
+        "peekOfCode": "INSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n]\nMIDDLEWARE = [\n    'django.middleware.security.SecurityMiddleware',",
+        "detail": "textutils.textutils.settings",
+        "documentation": {}
+    },
+    {
+        "label": "MIDDLEWARE",
+        "kind": 5,
+        "importPath": "textutils.textutils.settings",
+        "description": "textutils.textutils.settings",
+        "peekOfCode": "MIDDLEWARE = [\n    'django.middleware.security.SecurityMiddleware',\n    'django.contrib.sessions.middleware.SessionMiddleware',\n    'django.middleware.common.CommonMiddleware',\n    'django.middleware.csrf.CsrfViewMiddleware',\n    'django.contrib.auth.middleware.AuthenticationMiddleware',\n    'django.contrib.messages.middleware.MessageMiddleware',\n    'django.middleware.clickjacking.XFrameOptionsMiddleware',\n]\nROOT_URLCONF = 'textutils.urls'",
+        "detail": "textutils.textutils.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ROOT_URLCONF",
+        "kind": 5,
+        "importPath": "textutils.textutils.settings",
+        "description": "textutils.textutils.settings",
+        "peekOfCode": "ROOT_URLCONF = 'textutils.urls'\nTEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': ['templates'],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.request',\n                'django.contrib.auth.context_processors.auth',",
+        "detail": "textutils.textutils.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TEMPLATES",
+        "kind": 5,
+        "importPath": "textutils.textutils.settings",
+        "description": "textutils.textutils.settings",
+        "peekOfCode": "TEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': ['templates'],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.request',\n                'django.contrib.auth.context_processors.auth',\n                'django.contrib.messages.context_processors.messages',",
+        "detail": "textutils.textutils.settings",
+        "documentation": {}
+    },
+    {
+        "label": "WSGI_APPLICATION",
+        "kind": 5,
+        "importPath": "textutils.textutils.settings",
+        "description": "textutils.textutils.settings",
+        "peekOfCode": "WSGI_APPLICATION = 'textutils.wsgi.application'\n# Database\n# https://docs.djangoproject.com/en/5.2/ref/settings/#databases\nDATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\n# Password validation",
+        "detail": "textutils.textutils.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DATABASES",
+        "kind": 5,
+        "importPath": "textutils.textutils.settings",
+        "description": "textutils.textutils.settings",
+        "peekOfCode": "DATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\n# Password validation\n# https://docs.djangoproject.com/en/5.2/ref/settings/#auth-password-validators\nAUTH_PASSWORD_VALIDATORS = [\n    {",
+        "detail": "textutils.textutils.settings",
+        "documentation": {}
+    },
+    {
+        "label": "AUTH_PASSWORD_VALIDATORS",
+        "kind": 5,
+        "importPath": "textutils.textutils.settings",
+        "description": "textutils.textutils.settings",
+        "peekOfCode": "AUTH_PASSWORD_VALIDATORS = [\n    {\n        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',\n    },",
+        "detail": "textutils.textutils.settings",
+        "documentation": {}
+    },
+    {
+        "label": "LANGUAGE_CODE",
+        "kind": 5,
+        "importPath": "textutils.textutils.settings",
+        "description": "textutils.textutils.settings",
+        "peekOfCode": "LANGUAGE_CODE = 'en-us'\nTIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.2/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "textutils.textutils.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TIME_ZONE",
+        "kind": 5,
+        "importPath": "textutils.textutils.settings",
+        "description": "textutils.textutils.settings",
+        "peekOfCode": "TIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.2/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "textutils.textutils.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_I18N",
+        "kind": 5,
+        "importPath": "textutils.textutils.settings",
+        "description": "textutils.textutils.settings",
+        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.2/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "textutils.textutils.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_TZ",
+        "kind": 5,
+        "importPath": "textutils.textutils.settings",
+        "description": "textutils.textutils.settings",
+        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.2/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "textutils.textutils.settings",
+        "documentation": {}
+    },
+    {
+        "label": "STATIC_URL",
+        "kind": 5,
+        "importPath": "textutils.textutils.settings",
+        "description": "textutils.textutils.settings",
+        "peekOfCode": "STATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "textutils.textutils.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DEFAULT_AUTO_FIELD",
+        "kind": 5,
+        "importPath": "textutils.textutils.settings",
+        "description": "textutils.textutils.settings",
+        "peekOfCode": "DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "textutils.textutils.settings",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "textutils.textutils.urls",
+        "description": "textutils.textutils.urls",
+        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('index/',views.index,name='index'),\n    path('analyzer/',views.analyzer,name='analyzer')\n]",
+        "detail": "textutils.textutils.urls",
+        "documentation": {}
+    },
+    {
+        "label": "index",
+        "kind": 2,
+        "importPath": "textutils.textutils.views",
+        "description": "textutils.textutils.views",
+        "peekOfCode": "def index(request):\n    return render(request,'index.html')\ndef analyzer(request):\n    text = request.POST.get(\"text\", \"default\")\n    uppercase = request.POST.get(\"uppercase\", \"off\")\n    extraspace = request.POST.get(\"extraspace\", \"off\")\n    count = request.POST.get(\"count\", \"off\")\n    Transformedtext = text\n    if uppercase == \"on\":\n        Transformedtext = Transformedtext.upper()",
+        "detail": "textutils.textutils.views",
+        "documentation": {}
+    },
+    {
+        "label": "analyzer",
+        "kind": 2,
+        "importPath": "textutils.textutils.views",
+        "description": "textutils.textutils.views",
+        "peekOfCode": "def analyzer(request):\n    text = request.POST.get(\"text\", \"default\")\n    uppercase = request.POST.get(\"uppercase\", \"off\")\n    extraspace = request.POST.get(\"extraspace\", \"off\")\n    count = request.POST.get(\"count\", \"off\")\n    Transformedtext = text\n    if uppercase == \"on\":\n        Transformedtext = Transformedtext.upper()\n    if extraspace == \"on\":\n        Transformedtext = \" \".join(Transformedtext.split())",
+        "detail": "textutils.textutils.views",
+        "documentation": {}
+    },
+    {
+        "label": "application",
+        "kind": 5,
+        "importPath": "textutils.textutils.wsgi",
+        "description": "textutils.textutils.wsgi",
+        "peekOfCode": "application = get_wsgi_application()",
+        "detail": "textutils.textutils.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "textutils.manage",
+        "description": "textutils.manage",
+        "peekOfCode": "def main():\n    \"\"\"Run administrative tasks.\"\"\"\n    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'textutils.settings')\n    try:\n        from django.core.management import execute_from_command_line\n    except ImportError as exc:\n        raise ImportError(\n            \"Couldn't import Django. Are you sure it's installed and \"\n            \"available on your PYTHONPATH environment variable? Did you \"\n            \"forget to activate a virtual environment?\"",
+        "detail": "textutils.manage",
+        "documentation": {}
+    }
+]

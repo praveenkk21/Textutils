@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+
+{% block title %}Welcome to Text Utils{% endblock %}
+
+{% block msg%}
+<div class="alert alert-success alert-dismissible fade show" role="alert">
+  <strong>Welcome to Text utils, </strong> Please enter the texts to modify..
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+{% endblock%}
+
+{% block content %}
+    <form class='container' action="/analyzer/" method="post" oninput="checkToggles()" >{% csrf_token %}
+        
+        <div class="mb-3"> 
+            <label for="exampleFormControlTextarea1" class="form-label">Please enter the text</label>
+            <textarea  name="text" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <div class="form-check form-switch">
+            <input class="form-check-input" name="extraspace" type="checkbox" role="switch" id="switchCheckDefault">
+            <label class="form-check-label" for="switchCheckDefault">Remove the extra spaces</label>
+          </div>
+          <div class="form-check form-switch">
+            <input class="form-check-input" name="count" type="checkbox" role="switch" id="switchCheckDefault1">
+            <label class="form-check-label" for="switchCheckDefault1">Total count of chars</label>
+          </div>
+          <div class="form-check form-switch">
+            <input class="form-check-input" name="uppercase" type="checkbox" role="switch" id="switchCheckDefault2">
+            <label class="form-check-label" for="switchCheckDefault2">To uppercase</label>
+          </div>
+        <button id="analyzeBtn" type="submit" class="btn btn-primary mt-2" disabled="true">Analyze</button>
+    </form>
+{% endblock %}
+{% block scripts %}
+    <script>
+      function checkToggles() {
+          const checkboxes = document.querySelectorAll('.form-check-input');
+          const analyzeBtn = document.getElementById('analyzeBtn');
+  
+          let isAnyChecked = false;
+          checkboxes.forEach(cb => {
+              if (cb.checked) {
+                  isAnyChecked = true;
+              }
+          });
+  
+          analyzeBtn.disabled = !isAnyChecked;
+      }
+  
+      // Initial check in case of back navigation
+      window.onload = checkToggles;
+    </script>
+{% endblock %}
