@@ -24,3 +24,7 @@ path('admin/', admin.site.urls),
     <input class="form-check-input" name="count" type="checkbox" role="switch"/>
 
      based on  the name, we can get values under the url. request.GET.get("count")
+
+py -m pip freeze > requirements.txt
+docker build -t textutils .
+
