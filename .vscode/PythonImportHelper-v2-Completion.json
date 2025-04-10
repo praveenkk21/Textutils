@@ -25,6 +25,30 @@
         "documentation": {}
     },
     {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
         "label": "get_asgi_application",
         "importPath": "django.core.asgi",
         "description": "django.core.asgi",
@@ -693,12 +717,30 @@
         "documentation": {}
     },
     {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "textutils.textutils.migrations.0001_initial",
+        "description": "textutils.textutils.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='textutils',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('text', models.CharField(max_length=50)),",
+        "detail": "textutils.textutils.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
         "label": "application",
         "kind": 5,
         "importPath": "textutils.textutils.asgi",
         "description": "textutils.textutils.asgi",
         "peekOfCode": "application = get_asgi_application()",
         "detail": "textutils.textutils.asgi",
+        "documentation": {}
+    },
+    {
+        "label": "textutils",
+        "kind": 6,
+        "importPath": "textutils.textutils.models",
+        "description": "textutils.textutils.models",
+        "peekOfCode": "class textutils(models.Model):\n    text = models.CharField(max_length=50)\n    extra_space = models.BooleanField(default=False)\n    count = models.BooleanField(default=False)\n    uppercase = models.BooleanField(default=False)\n    def __str__(self):\n        return self.text",
+        "detail": "textutils.textutils.models",
         "documentation": {}
     },
     {
@@ -733,7 +775,7 @@
         "kind": 5,
         "importPath": "textutils.textutils.settings",
         "description": "textutils.textutils.settings",
-        "peekOfCode": "ALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n]",
+        "peekOfCode": "ALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'textutils',",
         "detail": "textutils.textutils.settings",
         "documentation": {}
     },
@@ -742,7 +784,7 @@
         "kind": 5,
         "importPath": "textutils.textutils.settings",
         "description": "textutils.textutils.settings",
-        "peekOfCode": "INSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n]\nMIDDLEWARE = [\n    'django.middleware.security.SecurityMiddleware',",
+        "peekOfCode": "INSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'textutils',\n]\nMIDDLEWARE = [",
         "detail": "textutils.textutils.settings",
         "documentation": {}
     },
@@ -778,7 +820,7 @@
         "kind": 5,
         "importPath": "textutils.textutils.settings",
         "description": "textutils.textutils.settings",
-        "peekOfCode": "WSGI_APPLICATION = 'textutils.wsgi.application'\n# Database\n# https://docs.djangoproject.com/en/5.2/ref/settings/#databases\nDATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\n# Password validation",
+        "peekOfCode": "WSGI_APPLICATION = 'textutils.wsgi.application'\n# Database\n# https://docs.djangoproject.com/en/5.2/ref/settings/#databases\nDATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.mysql',\n        'NAME': 'textutils',\n        'USER': 'root',\n        'PASSWORD': 'Pass@123',\n        'HOST': 'localhost',  # Or your MySQL server IP",
         "detail": "textutils.textutils.settings",
         "documentation": {}
     },
@@ -787,7 +829,7 @@
         "kind": 5,
         "importPath": "textutils.textutils.settings",
         "description": "textutils.textutils.settings",
-        "peekOfCode": "DATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\n# Password validation\n# https://docs.djangoproject.com/en/5.2/ref/settings/#auth-password-validators\nAUTH_PASSWORD_VALIDATORS = [\n    {",
+        "peekOfCode": "DATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.mysql',\n        'NAME': 'textutils',\n        'USER': 'root',\n        'PASSWORD': 'Pass@123',\n        'HOST': 'localhost',  # Or your MySQL server IP\n        'PORT': '3306',       # Default MySQL port\n    }\n}",
         "detail": "textutils.textutils.settings",
         "documentation": {}
     },
@@ -859,7 +901,7 @@
         "kind": 5,
         "importPath": "textutils.textutils.urls",
         "description": "textutils.textutils.urls",
-        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('index/',views.index,name='index'),\n    path('analyzer/',views.analyzer,name='analyzer')\n]",
+        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('', views.index,name='index'),\n    path('index/',views.index,name='index'),\n    path('analyzer/',views.analyzer,name='analyzer'),\n    path('dashboard/',views.dashboard,name='dashboard')\n]",
         "detail": "textutils.textutils.urls",
         "documentation": {}
     },
@@ -878,6 +920,15 @@
         "importPath": "textutils.textutils.views",
         "description": "textutils.textutils.views",
         "peekOfCode": "def analyzer(request):\n    text = request.POST.get(\"text\", \"default\")\n    uppercase = request.POST.get(\"uppercase\", \"off\")\n    extraspace = request.POST.get(\"extraspace\", \"off\")\n    count = request.POST.get(\"count\", \"off\")\n    Transformedtext = text\n    if uppercase == \"on\":\n        Transformedtext = Transformedtext.upper()\n    if extraspace == \"on\":\n        Transformedtext = \" \".join(Transformedtext.split())",
+        "detail": "textutils.textutils.views",
+        "documentation": {}
+    },
+    {
+        "label": "dashboard",
+        "kind": 2,
+        "importPath": "textutils.textutils.views",
+        "description": "textutils.textutils.views",
+        "peekOfCode": "def dashboard(request):\n    records = textutils.objects.all()\n    return render(request,'dashboard.html',{'records':records})",
         "detail": "textutils.textutils.views",
         "documentation": {}
     },

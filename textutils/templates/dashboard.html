@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block  content %}
+ <div class="mt-2 h4">Records</div>
+ <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">id</th>
+        <th scope="col">Text</th>
+        <th scope="col">Extra space</th>
+        <th scope="col">Count</th>
+        <th scope="col">Upper case</th>
+      </tr>
+    </thead>
+    <tbody>
+        {% for record in records%}
+      <tr>
+        <th scope="row">{{ record.id }}</th>
+        <td>{{ record.text }}</td>
+        <td>{{ record.extra_space }}</td>
+        <td>{{ record.count }}</td>
+        <td>{{ record.uppercase }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+ </table>
+{% endblock %}
+

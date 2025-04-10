@@ -1,5 +1,6 @@
 from django.http import HttpResponse
 from django.shortcuts import render
+from .models import textutils
 
 
 def index(request):
@@ -22,9 +23,18 @@ def analyzer(request):
     if count == "on":
         countofchars = len(Transformedtext)
         Transformedtext += f"\n\nTotal character count (excluding extra spaces): {countofchars}"
+        
+    textutils.objects.create(
+        text=text,
+        extra_space=True if extraspace == 'on' else False,
+        count=True if count == 'on' else False,
+        uppercase=True if uppercase == 'on' else False
+        )
 
     return render(request, 'analyzer.html', {'Transformedtext': Transformedtext})
 
-
+def dashboard(request):
+    records = textutils.objects.all()
+    return render(request,'dashboard.html',{'records':records})
 
 
