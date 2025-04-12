@@ -209,7 +209,32 @@
         "documentation": {}
     },
     {
+        "label": "django.shortcuts",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
         "label": "api_view",
+        "importPath": "rest_framework.decorators",
+        "description": "rest_framework.decorators",
+        "isExtraImport": true,
+        "detail": "rest_framework.decorators",
+        "documentation": {}
+    },
+    {
+        "label": "APIView",
         "importPath": "rest_framework.decorators",
         "description": "rest_framework.decorators",
         "isExtraImport": true,
@@ -255,14 +280,6 @@
         "description": "django.http",
         "isExtraImport": true,
         "detail": "django.http",
-        "documentation": {}
-    },
-    {
-        "label": "render",
-        "importPath": "django.shortcuts",
-        "description": "django.shortcuts",
-        "isExtraImport": true,
-        "detail": "django.shortcuts",
         "documentation": {}
     },
     {
@@ -432,7 +449,7 @@
         "kind": 5,
         "importPath": "students.school.urls",
         "description": "students.school.urls",
-        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('api/students',include('students.urls')),\n]",
+        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('api/students/',include('students.urls')),\n]",
         "detail": "students.school.urls",
         "documentation": {}
     },
@@ -513,8 +530,17 @@
         "kind": 5,
         "importPath": "students.students.urls",
         "description": "students.students.urls",
-        "peekOfCode": "urlpatterns = [\n    path('', views.student_list, name='student-list'),\n    path('/<int:pk>/', views.student_detail, name='student-detail'),\n    path('/studentsub/', views.student_sub_details,name='student-sub-details')\n]",
+        "peekOfCode": "urlpatterns = [\n    path('', views.student_list, name='student-list'),\n    path('/<int:pk>/', views.student_detail, name='student-detail'),\n    path('studentsub/', student_sub_details.as_view(),name='student-sub-details')\n]",
         "detail": "students.students.urls",
+        "documentation": {}
+    },
+    {
+        "label": "student_sub_details",
+        "kind": 6,
+        "importPath": "students.students.views",
+        "description": "students.students.views",
+        "peekOfCode": "class student_sub_details(APIView):\n    def get(self,request):\n        students = StudentSub.objects.all()\n        serializer = StudentSubSerializer(students, many=True)\n        return Response(serializer.data)\n    def post(self, request):\n        sid = request.data.get('sid')\n        serializer = StudentSubSerializer(data=request.data)\n        # Check if student exists\n        if not Student.objects.filter(id=sid).exists():",
+        "detail": "students.students.views",
         "documentation": {}
     },
     {
@@ -532,15 +558,6 @@
         "importPath": "students.students.views",
         "description": "students.students.views",
         "peekOfCode": "def student_detail(request, pk):\n    try:\n        student = Student.objects.get(pk=pk)\n    except Student.DoesNotExist:\n        return Response({'error': 'Student not found'}, status=status.HTTP_404_NOT_FOUND)\n    if request.method == 'GET':\n        serializer = StudentSerializer(student)\n        return Response(serializer.data)\n    elif request.method == 'PUT':\n        serializer = StudentSerializer(student, data=request.data)",
-        "detail": "students.students.views",
-        "documentation": {}
-    },
-    {
-        "label": "student_sub_details",
-        "kind": 2,
-        "importPath": "students.students.views",
-        "description": "students.students.views",
-        "peekOfCode": "def student_sub_details(request):\n    if request.method == 'GET':\n        students = StudentSub.objects.all()\n        serializer = StudentSubSerializer(students, many=True)\n        return Response(serializer.data)\n    elif request.method == 'POST':\n        sid = request.data.get('sid')\n        serializer = StudentSubSerializer(data=request.data)\n        # Check if student exists\n        if not Student.objects.filter(id=sid).exists():",
         "detail": "students.students.views",
         "documentation": {}
     },
