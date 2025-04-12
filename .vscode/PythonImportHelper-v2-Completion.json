@@ -97,6 +97,30 @@
         "documentation": {}
     },
     {
+        "label": "SpectacularAPIView",
+        "importPath": "drf_spectacular.views",
+        "description": "drf_spectacular.views",
+        "isExtraImport": true,
+        "detail": "drf_spectacular.views",
+        "documentation": {}
+    },
+    {
+        "label": "SpectacularSwaggerView",
+        "importPath": "drf_spectacular.views",
+        "description": "drf_spectacular.views",
+        "isExtraImport": true,
+        "detail": "drf_spectacular.views",
+        "documentation": {}
+    },
+    {
+        "label": "SpectacularRedocView",
+        "importPath": "drf_spectacular.views",
+        "description": "drf_spectacular.views",
+        "isExtraImport": true,
+        "detail": "drf_spectacular.views",
+        "documentation": {}
+    },
+    {
         "label": "get_wsgi_application",
         "importPath": "django.core.wsgi",
         "description": "django.core.wsgi",
@@ -250,6 +274,14 @@
         "documentation": {}
     },
     {
+        "label": "extend_schema",
+        "importPath": "drf_spectacular.utils",
+        "description": "drf_spectacular.utils",
+        "isExtraImport": true,
+        "detail": "drf_spectacular.utils",
+        "documentation": {}
+    },
+    {
         "label": "sys",
         "kind": 6,
         "isExtraImport": true,
@@ -332,7 +364,7 @@
         "kind": 5,
         "importPath": "students.school.settings",
         "description": "students.school.settings",
-        "peekOfCode": "INSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'rest_framework',\n    'students',\n]",
+        "peekOfCode": "INSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'rest_framework',\n    'students',\n    'drf_spectacular',",
         "detail": "students.school.settings",
         "documentation": {}
     },
@@ -404,7 +436,7 @@
         "kind": 5,
         "importPath": "students.school.settings",
         "description": "students.school.settings",
-        "peekOfCode": "TIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.2/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "peekOfCode": "TIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.2/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nREST_FRAMEWORK = {",
         "detail": "students.school.settings",
         "documentation": {}
     },
@@ -413,7 +445,7 @@
         "kind": 5,
         "importPath": "students.school.settings",
         "description": "students.school.settings",
-        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.2/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.2/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nREST_FRAMEWORK = {\n    'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',",
         "detail": "students.school.settings",
         "documentation": {}
     },
@@ -422,7 +454,7 @@
         "kind": 5,
         "importPath": "students.school.settings",
         "description": "students.school.settings",
-        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.2/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.2/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nREST_FRAMEWORK = {\n    'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',\n}",
         "detail": "students.school.settings",
         "documentation": {}
     },
@@ -431,7 +463,7 @@
         "kind": 5,
         "importPath": "students.school.settings",
         "description": "students.school.settings",
-        "peekOfCode": "STATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "peekOfCode": "STATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nREST_FRAMEWORK = {\n    'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',\n}",
         "detail": "students.school.settings",
         "documentation": {}
     },
@@ -440,7 +472,16 @@
         "kind": 5,
         "importPath": "students.school.settings",
         "description": "students.school.settings",
-        "peekOfCode": "DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "peekOfCode": "DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nREST_FRAMEWORK = {\n    'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',\n}",
+        "detail": "students.school.settings",
+        "documentation": {}
+    },
+    {
+        "label": "REST_FRAMEWORK",
+        "kind": 5,
+        "importPath": "students.school.settings",
+        "description": "students.school.settings",
+        "peekOfCode": "REST_FRAMEWORK = {\n    'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',\n}",
         "detail": "students.school.settings",
         "documentation": {}
     },
@@ -449,7 +490,7 @@
         "kind": 5,
         "importPath": "students.school.urls",
         "description": "students.school.urls",
-        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('api/students/',include('students.urls')),\n]",
+        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('api/students/',include('students.urls')),\n    # Schema and docs\n    path('schema/', SpectacularAPIView.as_view(), name='schema'),\n    path('swagger/', SpectacularSwaggerView.as_view(url_name='schema'), name='swagger-ui'),\n    path('redoc/', SpectacularRedocView.as_view(url_name='schema'), name='redoc'),\n]",
         "detail": "students.school.urls",
         "documentation": {}
     },
@@ -530,7 +571,7 @@
         "kind": 5,
         "importPath": "students.students.urls",
         "description": "students.students.urls",
-        "peekOfCode": "urlpatterns = [\n    path('', views.student_list, name='student-list'),\n    path('/<int:pk>/', views.student_detail, name='student-detail'),\n    path('studentsub/', student_sub_details.as_view(),name='student-sub-details')\n]",
+        "peekOfCode": "urlpatterns = [\n    path('', views.student_list, name='student-list'),\n    path('<int:pk>/', views.student_detail, name='student-detail'),\n    path('studentsub/', student_sub_details.as_view(),name='student-sub-details'),\n]",
         "detail": "students.students.urls",
         "documentation": {}
     },
@@ -539,7 +580,7 @@
         "kind": 6,
         "importPath": "students.students.views",
         "description": "students.students.views",
-        "peekOfCode": "class student_sub_details(APIView):\n    def get(self, request):\n        students = StudentSub.objects.all()\n        serializer = StudentSubSerializer(students, many=True)\n        return Response(serializer.data)\n    def post(self, request):\n        sid = request.data.get('sid')\n        serializer = StudentSubSerializer(data=request.data)\n        # Check if student exists\n        if not Student.objects.filter(id=sid).exists():",
+        "peekOfCode": "class student_sub_details(APIView):\n    @extend_schema(\n        responses=StudentSerializer(many=True),\n    )\n    def get(self, request):\n        students = StudentSub.objects.all()\n        serializer = StudentSubSerializer(students, many=True)\n        return Response(serializer.data)\n    def post(self, request):\n        sid = request.data.get('sid')",
         "detail": "students.students.views",
         "documentation": {}
     },

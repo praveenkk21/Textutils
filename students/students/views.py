@@ -6,14 +6,21 @@ from rest_framework import status
 from .models import StudentSub
 from .models import Student
 from .serializers import StudentSerializer, StudentSubSerializer
+from drf_spectacular.utils import extend_schema
 
+@extend_schema(
+    methods=['GET', 'POST'],
+    request=StudentSerializer,
+    responses=StudentSerializer,
+    tags=['Students'],
+)
 @api_view(['GET', 'POST'])
 def student_list(request):
     if request.method == 'GET':
         students = Student.objects.all()
         serializer = StudentSerializer(students, many=True)
         return Response(serializer.data)
-
+    
     elif request.method == 'POST':
         serializer = StudentSerializer(data=request.data)
         if serializer.is_valid():
@@ -21,7 +28,12 @@ def student_list(request):
             return Response(serializer.data, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
-
+@extend_schema(
+    methods=['GET', 'PUT', 'DELETE'],
+    request=StudentSerializer,
+    responses=StudentSerializer,
+    tags=['Students'],
+)
 @api_view(['GET', 'PUT', 'DELETE'])
 def student_detail(request, pk):
     try:
@@ -45,7 +57,15 @@ def student_detail(request, pk):
         return Response(status=status.HTTP_204_NO_CONTENT)
 
 
+@extend_schema(
+        request=StudentSerializer,
+        responses=StudentSerializer,
+        tags=['Students Subject'],
+    )
 class student_sub_details(APIView):
+    @extend_schema(
+        responses=StudentSerializer(many=True),
+    )
     def get(self, request):
         students = StudentSub.objects.all()
         serializer = StudentSubSerializer(students, many=True)
