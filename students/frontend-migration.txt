@@ -1,0 +1,87 @@
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
+
+const StudentSubDetails = () => {
+    const [data, setData] = useState([]);
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState(null);
+
+    // Fetch data from API
+    useEffect(() => {
+        axios.get('http://localhost:8000/api/students/studentsub/')
+            .then(response => {
+                setData(response.data);
+                setLoading(false);
+            })
+            .catch(error => {
+                setError('Error fetching data');
+                setLoading(false);
+            });
+    }, []);
+
+    if (loading) return <div>Loading...</div>;
+    if (error) return <div>{error}</div>;
+
+    return (
+        <div>
+            <h1>Student Subjects</h1>
+            <ul>
+                {data.map(item => (
+                    <li key={item.id}>
+                        {item.sid} - {item.subject}
+                    </li>
+                ))}
+            </ul>
+        </div>
+    );
+};
+
+export default StudentSubDetails;
+
+--------------------------------------
+
+import React, { useState } from 'react';
+import axios from 'axios';
+
+const CreateStudentSub = () => {
+    const [sid, setSid] = useState('');
+    const [subject, setSubject] = useState('');
+    const [error, setError] = useState(null);
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+
+        const requestData = {
+            sid: sid,
+            subject: subject,
+        };
+
+        try {
+            const response = await axios.post('http://localhost:8000/api/students/studentsub/', requestData);
+            console.log('New Student Sub:', response.data);
+        } catch (err) {
+            setError('Error sending data');
+        }
+    };
+
+    return (
+        <form onSubmit={handleSubmit}>
+            <input
+                type="text"
+                placeholder="Student ID"
+                value={sid}
+                onChange={(e) => setSid(e.target.value)}
+            />
+            <input
+                type="text"
+                placeholder="Subject"
+                value={subject}
+                onChange={(e) => setSubject(e.target.value)}
+            />
+            <button type="submit">Add Subject</button>
+            {error && <div>{error}</div>}
+        </form>
+    );
+};
+
+export default CreateStudentSub;

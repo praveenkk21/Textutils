@@ -46,7 +46,7 @@ def student_detail(request, pk):
 
 
 class student_sub_details(APIView):
-    def get(self,request):
+    def get(self, request):
         students = StudentSub.objects.all()
         serializer = StudentSubSerializer(students, many=True)
         return Response(serializer.data)

@@ -539,7 +539,7 @@
         "kind": 6,
         "importPath": "students.students.views",
         "description": "students.students.views",
-        "peekOfCode": "class student_sub_details(APIView):\n    def get(self,request):\n        students = StudentSub.objects.all()\n        serializer = StudentSubSerializer(students, many=True)\n        return Response(serializer.data)\n    def post(self, request):\n        sid = request.data.get('sid')\n        serializer = StudentSubSerializer(data=request.data)\n        # Check if student exists\n        if not Student.objects.filter(id=sid).exists():",
+        "peekOfCode": "class student_sub_details(APIView):\n    def get(self, request):\n        students = StudentSub.objects.all()\n        serializer = StudentSubSerializer(students, many=True)\n        return Response(serializer.data)\n    def post(self, request):\n        sid = request.data.get('sid')\n        serializer = StudentSubSerializer(data=request.data)\n        # Check if student exists\n        if not Student.objects.filter(id=sid).exists():",
         "detail": "students.students.views",
         "documentation": {}
     },
